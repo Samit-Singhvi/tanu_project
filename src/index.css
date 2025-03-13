@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-raleway-500 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-merriweather-900 {
+    font-family: 'Merriweather', serif;
+}
+
+.font-tiltprism-400 {
+    font-family: 'Tilt Prism', cursive;
+}
+
+@layer components {
+    .button-success {
+        @apply py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800;
+    }
+
+    .text-input-1 {
+        @apply py-3 px-5 block bg-green-50 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500;
+    }
+
+    .heading-2{
+        @apply text-2xl text-center font-serif pt-4 pb-2
+    }
+}
+
+tr:nth-child(even){
+    background-color: aliceblue;
+}
